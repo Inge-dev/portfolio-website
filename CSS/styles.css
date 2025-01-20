@@ -180,6 +180,7 @@ button:hover, button:focus, .button:hover, .button:focus {
   }
   h1 {
     font-size: 22px;
+    text-align: right;
   }
 }
 
@@ -190,7 +191,8 @@ button:hover, button:focus, .button:hover, .button:focus {
 }
 
 table {
-  margin: 0 auto;;
+  margin: 0 auto;
+  color:var(--gridfont-color)
 }
 
 @keyframes color-change {
@@ -241,4 +243,16 @@ table {
   margin: 0 auto;
   padding: 0;
   width: fit-content;
+}
+
+form {
+  color: var(--gridfont-color);
+}
+
+
+.contact__wrapper {
+  text-align: center;
+}
+.contact {
+  color: var(--gridfont-color);
 }
