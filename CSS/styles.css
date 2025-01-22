@@ -84,10 +84,8 @@ button:hover, button:focus, .button:hover, .button:focus {
 }
 
 .profile__portrait {
-  float:left;
   width: 250px;
   height: 250px;
-  margin-right: 40px;
   border-radius: 50%
 }
 
@@ -96,6 +94,7 @@ button:hover, button:focus, .button:hover, .button:focus {
 }
 
 .profile {
+  width: 100%;
   max-width: 700px;
   margin: 0 auto;
 }
@@ -178,7 +177,7 @@ button:hover, button:focus, .button:hover, .button:focus {
     grid-column: auto / auto;
     grid-row: auto / auto;
   }
-  h1 {
+  .grid h1 {
     font-size: 22px;
     text-align: right;
   }
@@ -255,4 +254,32 @@ form {
 }
 .contact {
   color: var(--gridfont-color);
+}
+
+@media all and (min-width: 750px) {
+.profile__portrait {
+  float:left;
+  margin-right: 40px;
+}
+}
+
+@media all and (max-width: 750px) {
+.profile {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+}
+
+@media all and (max-width: 750px) {
+  .profile h1 {
+    text-align: left;
+  }
+}
+
+@media all and (max-width: 750px) {
+  form {
+    display: flex;
+    flex-direction: column;
+  }
 }
